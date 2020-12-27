@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(217, 129, 125, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap: 30px;
+    margin: 0 auto;
+}
+.grid-item{
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    background-color: rgb(250, 213, 4);
+    animation: closeAnimation 0.5s forwards;
+}
+.open{
+    animation: openAnimation 0.5s forwards;
+}
+@keyframes openAnimation{
+    100%{
+        transform: rotate(180deg);
+        background-image: url();
+    }
+}
+@keyframes closeAnimation{
+    100%{
+        transform: rotate(-180deg);
+        background-color: rgb(250, 213, 4);
+    }
+}

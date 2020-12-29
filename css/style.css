@@ -17,24 +17,52 @@ body{
     margin: 0 auto;
 }
 .grid-item{
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 180px;
     border-radius: 8px;
     background-color: rgb(250, 213, 4);
-    animation: closeAnimation 0.5s forwards;
+    animation: closeAnimation 1s forwards;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .open{
-    animation: openAnimation 0.5s forwards;
+    animation: openAnimation 1s forwards;
+    background-image: none;
 }
 @keyframes openAnimation{
     100%{
-        transform: rotate(180deg);
-        background-image: url();
+        transform: rotateY(180deg);
+       background-color: #fff;
     }
 }
 @keyframes closeAnimation{
     100%{
-        transform: rotate(-180deg);
+        transform: rotateY(180deg);
         background-color: rgb(250, 213, 4);
     }
+}
+.first{
+    background-image: url(../images/first.jpg);
+}
+.second{
+    background-image: url(../images/second.jpg);
+}
+.third{
+    background-image: url(../images/third.jpg);
+}
+.four{
+    background-image: url(../images/four.jpg);
+}
+.five{
+    background-image: url(../images/five.jpg);
+}
+.six{
+    background-image: url(../images/six.jpg);
+}
+.seven{
+    background-image: url(../images/seven.jpg);
+}
+.eight{
+    background-image: url(../images/eight.jpg);
 }
